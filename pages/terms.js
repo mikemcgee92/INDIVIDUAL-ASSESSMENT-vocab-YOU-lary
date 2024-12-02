@@ -15,7 +15,7 @@ const showTerms = (array) => {
       <div class="card">
         <h5 class="card-title">${item.word}</h5>
         <p class="card-text bold">${item.definition}</p>
-        <p class="card-text">${item.category}</p>
+        <p class="card-text-category">${item.category}</p>
         <button type="button" class="btn btn-outline-info" id="edit-term-btn--${item.firebaseKey}">edit</button>
         <button type="button" class="btn btn-outline-danger" id="delete-term-btn--${item.firebaseKey}">X</button>
       </div>`;

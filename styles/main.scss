@@ -8,3 +8,31 @@ body {
   text-align: center;
   margin-top: 100px;
 }
+
+.card {
+  width: 18rem;
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  
+  .card-text-category {
+    color: lightblue;
+    font-style: italic;
+  }
+
+  .btn {
+    width: 20%;
+    align-self: center;
+    justify-self: flex-start;
+  }
+}
+
+#home {
+  display: flex;
+}
+
+#logout-button {
+  margin-left: 10px;
+}
