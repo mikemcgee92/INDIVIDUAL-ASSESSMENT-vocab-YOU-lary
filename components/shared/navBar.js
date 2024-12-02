@@ -10,25 +10,23 @@ const navBar = () => {
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <li class="nav-item active">
+              <a class="nav-link" href="#" id="all-terms">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
+              <a class="nav-link" href="#" id="javascript-terms">Javascript</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              <a class="nav-link" href="#" id="html-terms">HTML</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="css-terms">CSS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="webdev-terms">Web Development</a>
+            </li>
+            <li class="nav-item">
+              <button class="btn btn-outline-primary" id="add-term-btn">+ Add term</button>
             </li>
           </ul>
           <form class="d-flex" role="search">
