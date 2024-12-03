@@ -17,10 +17,10 @@ const createTermForm = (uid, obj = {}) => {
         <label for ="category-select">Select a category</label>
         <select class="form-control" id="category-select" required>
           <option value="">Select a category</option>
-          <option value="javascript">Javascript</option>
-          <option value="html">HTML</option>
-          <option value="css">CSS</option>
-          <option value="webdev">Web Development</option>
+          <option value="javascript" ${obj.category === 'javascript' ? 'selected' : ''}>Javascript</option>
+          <option value="html" ${obj.category === 'html' ? 'selected' : ''}>HTML</option>
+          <option value="css" ${obj.category === 'css' ? 'selected' : ''}>CSS</option>
+          <option value="webdev" ${obj.category === 'webdev' ? 'selected' : ''}>Web Development</option>
         </select>
       </div>
       <button type="submit" class="btn btn-primary" id="submit-term">Submit</button>
