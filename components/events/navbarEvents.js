@@ -1,4 +1,4 @@
-import { filterTerms, getTerms } from '../../api/termsData';
+import { filterTerms, getTerms, searchTerm } from '../../api/termsData';
 import { showTerms, emptyTerms } from '../../pages/terms';
 import { signOut } from '../../utils/auth';
 import createTermForm from '../forms/createTermForm';
@@ -74,6 +74,24 @@ const navbarEvents = (user) => {
     .addEventListener('click', () => {
       createTermForm(user.uid);
     });
+
+  // handle the search bar
+  document.querySelector('#search-input').addEventListener('keyup', (e) => {
+    const searchValue = document.querySelector('#search-input').value.toLowerCase();
+
+    searchTerm(user.uid, searchValue).then((result) => {
+      console.warn(result);
+      if (result.length > 0) {
+        showTerms(result);
+      } else {
+        emptyTerms();
+      }
+    });
+
+    if (e.keycord === 13) {
+      document.querySelector('#search-input').value = '';
+    }
+  });
 };
 
 export default navbarEvents;

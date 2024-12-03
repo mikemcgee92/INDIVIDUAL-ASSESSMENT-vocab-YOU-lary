@@ -85,11 +85,27 @@ const deleteTerm = (firebaseKey) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
+const searchTerm = (uid, keyword) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/terms.json?orderBy="uid"&equalTo="${uid}"`, {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      const termSearch = Object.values(data).filter((item) => item.word.toLowerCase().includes(keyword));
+      resolve(termSearch);
+    })
+    .catch(reject);
+});
+
 export {
   getTerms,
   getSingleTerm,
   deleteTerm,
   createTerm,
   filterTerms,
-  updateTerm
+  updateTerm,
+  searchTerm
 };
