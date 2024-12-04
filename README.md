@@ -21,10 +21,8 @@ This app allows users to create, view, edit, and delete vocabulary terms for fou
 - Cards can be deleted as well
 
 ## Video Walkthrough of vocabYOUlary
+https://www.loom.com/share/7b4978ec53444b8ea76cffffc25a4cbb?sid=586f418f-f903-4928-9578-fa9fa0ea35ba
 
-<div style="position: relative; padding-bottom: 88.07829181494662%; height: 0;">
-  <iframe src="https://www.loom.com/embed/7b4978ec53444b8ea76cffffc25a4cbb?sid=5b315188-48fa-42fa-bfdd-d0933e9db4ef" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-</div>
 
 ## Relevant Links
 
